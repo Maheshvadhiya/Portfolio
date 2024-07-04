@@ -9,9 +9,10 @@ import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
 // Config
-import { moreInfo } from "../config";
+import { filteredProjects, moreInfo } from "../config";
 // Utils
 import { updateTitle } from "../utils";
+import Projects from "../components/Projects";
 
 // #region component
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
           moreInfo={moreInfo}
         />
         <Skills />
-        {/* <Projects filteredProjects={filteredProjects} /> */}
+        <Projects filteredProjects={filteredProjects} />
         <Contact />
       </main>
       <BackToTop />

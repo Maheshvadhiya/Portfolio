@@ -55,7 +55,7 @@ const ThemeToggle = ({ closeDelay, setExpanded, setTheme }) => {
   const theme = useSelector(selectMode);
 
   const toggleTheme = () => {
-    const themType = theme === "light" ? "dark" : "light";
+    const themType = theme === "dark" ? "light" : "dark";
     setTheme(themType);
     setStoredTheme(themType);
   };
